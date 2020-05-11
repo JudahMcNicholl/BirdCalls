@@ -1,0 +1,47 @@
+<html>
+<head>
+		<meta charset="utf-8" />
+		<title>Birds</title>
+		<link rel="stylesheet" href="styles/style.css">
+</head>
+<body onload="setUp()">
+
+	<div class="wrap">
+			<div id="pixelLeft">&nbsp;</div>
+			<div id="bannerCenter">
+				<div class='centerInMiddleColumn'>
+					<audio id="audio" controls>
+							<source src="" type="audio/mpeg">
+								Your browser does not support the audio element!
+					</audio>
+				</div>
+				<div class ='centerInMiddleColumn'>
+					<form autocomplete="off" action="javascript:void(0);" onsubmit="checkAnswer()">
+						<input id="answer" type="text" name="answer" placeholder="Bird">
+						<input type="submit">
+					</form>
+				</div>
+				<div class='centerInMiddleColumn'>
+					<button class="button" id="randomize" onClick="randomize();">Randomize</button>
+					<button class="button" id="show" onClick="showAnswer();">Show Answer</button>
+					<button class="button" id="hide" onClick="hideAnswer();">Hide Answer</button>
+				</div>
+				<div class ='centerInMiddleColumn'>
+					<h3 id="correctAnswer"></h3>
+				</div>
+				<div class='centerInMiddleColumn'>
+					<div id="imageContainer" >
+						<div class="txtImg">
+							 <h1 id="birdTitle"></h1>
+							 <img src='' id='birdImage' name='image' height="600" width="600">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="pixelRight">&nbsp;</div>
+	</div>
+	<div style="clear:both;"></div>
+
+</body>
+<script src="js/birds.js"></script>
+</html>
