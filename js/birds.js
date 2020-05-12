@@ -79,7 +79,7 @@ function randomize() {
 		birds = birdsMain.slice();
 	}
 	document.getElementById("correctAnswer").innerHTML = "";
-	randomItem = birds.splice(Math.floor(Math.random() * birds.length), 1);
+	randomItem = birds.splice(Math.floor(Math.random() * birds.length), 1)[0];
 	document.getElementById("audio").setAttribute('src', 'sounds/' + randomItem + '.mp3');
 	setUpAnswer();
 	hideAnswer();
